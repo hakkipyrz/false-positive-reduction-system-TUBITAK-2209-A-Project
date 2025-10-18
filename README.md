@@ -1,8 +1,8 @@
 # 🛡️ Log Priority Dashboard (LPD)
 
-SOC Analist Verimlilik Aracı / SOC Analyst Efficiency Tool
+SOC Analyst Efficiency Tool / SOC Analist Verimlilik Aracı  
 
-**Language:** Türkçe | English
+**Language:** English | Turkish  
 
 ---
 
@@ -33,7 +33,7 @@ The log datasets used are provided from the LogHub repository for academic resea
 
 ---
 
-# Türkçe 📝 Proje Özeti (TÜBİTAK 2209-A Projesi)
+## Turkish 📝 Proje Özeti (TÜBİTAK 2209-A Projesi)
 
 Bu proje, TÜBİTAK 2209-A kapsamında geliştirilen **log analiz ve önceliklendirme aracı**dır.
 
