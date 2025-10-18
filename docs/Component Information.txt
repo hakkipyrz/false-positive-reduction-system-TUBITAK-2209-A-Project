@@ -1,0 +1,351 @@
+#English
+
+🔐 CRITICAL FROM A SECURITY PERSPECTIVE:
+
+sshd(pam_unix) - SSH Server
+
+What it does: Remote connection and command execution
+
+Risk: Primary target for brute-force attacks
+
+Example Log: "authentication failure" - attacker attempt
+
+Priority: CRITICAL
+
+ftpd - FTP Server
+
+What it does: File transfer
+
+Risk: Password attempts, anonymous access risk
+
+Example Log: "connection from" - scanning or attack
+
+Priority: HIGH
+
+klogind - Kerberos Login
+
+What it does: Secure login over the network
+
+Risk: Authentication attacks
+
+Example Log: "Authentication failed" - unauthorized access
+
+Priority: HIGH
+
+gdm(pam_unix) - Graphical Interface Login
+
+What it does: GUI login screen
+
+Risk: Physical access or GUI-based attacks
+
+Priority: MEDIUM
+
+⚙️ SYSTEM OPERATIONS:
+
+su(pam_unix) - Switch User
+
+What it does: Switching between users
+
+Risk: Privilege escalation attempts
+
+Example Log: "session opened for user cyrus" - normal system operation
+
+Priority: LOW (for legitimate users)
+
+logrotate - Log File Management
+
+What it does: Compresses and rotates log files
+
+Risk: None - entirely legitimate
+
+Example Log: "ALERT exited abnormally" - system maintenance
+
+Priority: IGNORE
+
+cups - Printing System
+
+What it does: Printer management
+
+Risk: Low - local network service
+
+Example Log: "cupsd startup succeeded" - normal startup
+
+Priority: LOW
+
+🌐 NETWORK SERVICES:
+
+named - DNS Server
+
+What it does: Domain name resolution
+
+Risk: DNS spoofing, zone transfer attacks
+
+Example Log: "notify question section contains no SOA" - DNS queries
+
+Priority: MEDIUM
+
+xinetd - Super Server
+
+What it does: Manages other network services
+
+Risk: Controls multiple services
+
+Example Log: "warning: can't get client address" - network connection issue
+
+Priority: MEDIUM
+
+snmpd - Network Management Protocol
+
+What it does: Monitors network devices
+
+Risk: Information leakage, unauthorized access
+
+Example Log: "Received SNMP packet" - network monitoring traffic
+
+Priority: MEDIUM
+
+🔧 SYSTEM KERNEL and INFRASTRUCTURE:
+
+kernel - Operating System Kernel
+
+What it does: Manages hardware and software
+
+Risk: Kernel exploits (rare)
+
+Example Log: "Memory: 125312k/129720k available" - system status
+
+Priority: IGNORE/LOW
+
+udev - Hardware Management
+
+What it does: Manages plug-and-play devices
+
+Risk: USB device security
+
+Example Log: "creating device node" - hardware change
+
+Priority: IGNORE
+
+📡 PROTOCOL and SERVICES:
+
+portmap, rpc.statd, nfslock - RPC Services
+
+What it does: Remote procedure calls
+
+Risk: RPC exploits
+
+Priority: LOW
+
+bluetooth, hcid, sdpd - Bluetooth Services
+
+What it does: Wireless device connection
+
+Risk: Bluetooth exploits
+
+Priority: LOW
+
+syslogd - Centralized Logging
+
+What it does: Collects all system logs
+
+Risk: Log manipulation (advanced)
+
+Example Log: "syslogd 1.4.1: restart" - normal operation
+
+Priority: IGNORE
+
+🎯 STRATEGY FOR YOUR PROJECT:
+
+Requires Immediate Alert:
+
+sshd + "authentication failure"
+
+ftpd + multiple "connection from"
+
+klogind + "Authentication failed"
+
+Requires Review:
+
+su + unknown user
+
+named + abnormal DNS queries
+
+Can Be Ignored:
+
+logrotate, cups, syslogd normal operations
+
+kernel system status messages
+
+---------------------------------------------------------------------------------
+
+#Turkish
+
+🔐 GÜVENLİK AÇISINDAN KRİTİK OLANLAR:
+sshd(pam_unix) - SSH Sunucusu
+
+Ne yapar: Uzaktan bağlantı ve komut çalıştırma
+
+Risk: Brute-force saldırılarının birincil hedefi
+
+Örnek Log: "authentication failure" - saldırgan girişimi
+
+Öncelik: CRITICAL
+
+ftpd - FTP Sunucusu
+
+Ne yapar: Dosya transferi
+
+Risk: Şifre denemeleri, anonim erişim riski
+
+Örnek Log: "connection from" - tarama veya saldırı
+
+Öncelik: HIGH
+
+klogind - Kerberos Login
+
+Ne yapar: Ağ üzerinden güvenli login
+
+Risk: Kimlik doğrulama atakları
+
+Örnek Log: "Authentication failed" - yetkisiz erişim
+
+Öncelik: HIGH
+
+gdm(pam_unix) - Grafik Arayüz Login
+
+Ne yapar: GUI login ekranı
+
+Risk: Fiziksel erişim veya GUI tabanlı ataklar
+
+Öncelik: MEDIUM
+
+⚙️ SİSTEM İŞLEMLERİ:
+su(pam_unix) - Kullanıcı Değiştirme
+
+Ne yapar: Kullanıcılar arası geçiş
+
+Risk: Yetki yükseltme girişimleri
+
+Örnek Log: "session opened for user cyrus" - normal sistem işlemi
+
+Öncelik: LOW (meşru kullanıcılar için)
+
+logrotate - Log Dosyası Yönetimi
+
+Ne yapar: Log dosyalarını sıkıştırır ve döndürür
+
+Risk: Yok - tamamen meşru
+
+Örnek Log: "ALERT exited abnormally" - sistem bakımı
+
+Öncelik: IGNORE
+
+cups - Yazdırma Sistemi
+
+Ne yapar: Yazıcı yönetimi
+
+Risk: Düşük - yerel ağ servisi
+
+Örnek Log: "cupsd startup succeeded" - normal başlangıç
+
+Öncelik: LOW
+
+🌐 AĞ SERVİSLERİ:
+named - DNS Sunucusu
+
+Ne yapar: Alan adı çözümlemesi
+
+Risk: DNS spoofing, zone transfer atakları
+
+Örnek Log: "notify question section contains no SOA" - DNS sorguları
+
+Öncelik: MEDIUM
+
+xinetd - Süper Sunucu
+
+Ne yapar: Diğer ağ servislerini yönetir
+
+Risk: Çoklu servisleri kontrol eder
+
+Örnek Log: "warning: can't get client address" - ağ bağlantı sorunu
+
+Öncelik: MEDIUM
+
+snmpd - Ağ Yönetim Protokolü
+
+Ne yapar: Ağ cihazlarını izleme
+
+Risk: Bilgi sızıntısı, yetkisiz erişim
+
+Örnek Log: "Received SNMP packet" - ağ izleme trafiği
+
+Öncelik: MEDIUM
+
+🔧 SİSTEM ÇEKİRDEĞİ ve ALTYAPI:
+kernel - İşletim Sistemi Çekirdeği
+
+Ne yapar: Donanım ve yazılım yönetimi
+
+Risk: Kernel exploit'leri (nadir)
+
+Örnek Log: "Memory: 125312k/129720k available" - sistem durumu
+
+Öncelik: IGNORE/LOW
+
+udev - Donanım Yönetimi
+
+Ne yapar: Tak-çalıştır cihazları yönetir
+
+Risk: USB cihaz güvenliği
+
+Örnek Log: "creating device node" - donanım değişikliği
+
+Öncelik: IGNORE
+
+📡 PROTOKOL ve SERVİSLER:
+portmap, rpc.statd, nfslock - RPC Servisleri
+
+Ne yapar: Uzak prosedür çağrıları
+
+Risk: RPC exploit'leri
+
+Öncelik: LOW
+
+bluetooth, hcid, sdpd - Bluetooth Servisleri
+
+Ne yapar: Kablosuz cihaz bağlantısı
+
+Risk: Bluetooth exploit'leri
+
+Öncelik: LOW
+
+syslogd - Merkezi Loglama
+
+Ne yapar: Tüm sistem loglarını toplar
+
+Risk: Log manipulation (ileri seviye)
+
+Örnek Log: "syslogd 1.4.1: restart" - normal işlem
+
+Öncelik: IGNORE
+
+🎯 PROJEN İÇİN STRATEJİ:
+Hemen Alarm Gerektirenler:
+
+sshd + "authentication failure"
+
+ftpd + çoklu "connection from"
+
+klogind + "Authentication failed"
+
+İnceleme Gerektirenler:
+
+su + bilinmeyen kullanıcı
+
+named + anormal DNS sorguları
+
+Göz Ardı Edilebilir:
+
+logrotate, cups, syslogd normal işlemleri
+
+kernel sistem durumu mesajları

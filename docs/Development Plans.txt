@@ -1,0 +1,92 @@
+#English
+
+🎯 FUTURE ENHANCEMENTS:
+
+1. ADD MACHINE LEARNING 🤖 Current: "E18 = CRITICAL" (fixed rule)
+
+With ML: "This IP has a 94% probability of performing E18" (smart prediction)
+
+2. REAL-TIME LOG MONITORING ⚡ Current: Read from CSV (static)
+
+Advanced: Monitor the live log file
+
+See live attacks instantly
+
+3. REPORTING SYSTEM 📊 Automatically generate daily/weekly reports
+
+"Top 10 Attacking IPs"
+
+"Attack Trend Analysis"
+
+AUTOMATED BLOCKING 🛡️ Current: Just display
+
+Advanced: Ban the IP via firewall with a button
+
+"Block this IP" button
+
+MULTIPLE LOG FILE SUPPORT 📁 Not just 1 CSV
+
+Logs from multiple servers
+
+Different formats (Apache, Windows, etc.)
+
+USER MANAGEMENT 👥 SOC analyst login
+
+Different privileges (L1, L2, Admin)
+
+Action history
+
+GEOGRAPHICAL VISUALIZATION 🗺️ Displaying IPs on a map
+
+"50 attacks from China, 20 attacks from the USA" "
+
+---------------------------------------------------------------------------------
+
+#Turkish
+
+🎯 GELİŞTİRME ÖNERİLERİ:
+
+1. MAKİNE ÖĞRENMESİ EKLE 🤖
+Normal: "E18 = CRITICAL" (sabit kural)
+
+ML ile: "Bu IP'nin E18 yapma olasılığı %94" (akıllı tahmin)
+
+2. GERÇEK ZAMANLI LOG İZLEME ⚡
+Şimdi: CSV'den oku (statik)
+
+Gelişmiş: Canlı log dosyasını izle
+
+Canlı saldırıları anında gör
+
+3. RAPORLAMA SİSTEMİ 📊
+Günlük/haftalık rapor otomatik üret
+
+"En çok saldıran 10 IP"
+
+"Saldırı trend analizi"
+
+4. OTOMATİK ENGELLEME 🛡️
+Şimdi: Sadece göster
+
+Gelişmiş: Butonla IP'yi firewall'dan banla
+
+"Bu IP'yi engelle" butonu
+
+5. ÇOKLU LOG DOSYASI DESTEĞİ 📁
+Sadece 1 CSV değil
+
+Birden fazla sunucu logu
+
+Farklı formatlar (Apache, Windows, vs.)
+
+6. KULLANICI YÖNETİMİ 👥
+SOC analisti girişi
+
+Farklı yetkiler (L1, L2, Yönetici)
+
+İşlem geçmişi
+
+7. COĞRAFİ GÖRSELLEŞTİRME 🗺️
+IP'lerin haritada gösterimi
+
+"Çin'den 50 saldırı, ABD'den 20 saldırı"
