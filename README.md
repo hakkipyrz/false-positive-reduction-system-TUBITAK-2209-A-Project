@@ -31,6 +31,9 @@ The log datasets used are provided from the LogHub repository for academic resea
 - **User Management:** SOC analyst login with different privileges.  
 - **Geographical Visualization:** Display IP attacks on a map.
 
+**Status**
+- This project is currently under development.
+
 ---
 
 ## Turkish 📝 Proje Özeti (TÜBİTAK 2209-A Projesi)
@@ -57,3 +60,6 @@ Kullanım veya dağıtım için: [https://github.com/logpai/loghub](https://gith
 - **Çoklu Log Dosyası Desteği:** Farklı sunucular ve formatlar.  
 - **Kullanıcı Yönetimi:** Analist girişleri, farklı yetkiler.  
 - **Coğrafi Görselleştirme:** IP’leri haritada gösterim.
+
+**Durum**
+- Bu proje şu anda geliştirme aşamasındadır.
